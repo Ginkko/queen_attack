@@ -12,7 +12,11 @@ describe('Array#queen_attack?') do
    end
 #Queen attack will check to see if the players queen is in line with the opponetnts peice veritcally. If so the queen can attack and will show as true.
    it('is true if the coordiantes are vertically in line with each other') do
-   expect([4,3].queen_attack?([2,3])).to(eq(true))
-   end
-
+     expect([4,3].queen_attack?([2,3])).to(eq(true))
+     end
+#Queen attack will check to see if the players queen is in line with the opponents peice diagonally. If so the queen can attack and will show as true.
+    it('is true if the coordiantes are vertically in line with each other') do
+      expect([3,7].queen_attack?([4,8])).to(eq(true))
+      end
+  
 end
